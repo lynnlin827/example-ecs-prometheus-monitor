@@ -70,7 +70,7 @@ resource "aws_instance" "monitor" {
 echo ECS_CLUSTER=monitor >> /etc/ecs/ecs.config
 EOF
 
-  tags {
+  tags = {
     Name = "monitor"
   }
 }

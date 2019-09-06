@@ -60,7 +60,7 @@ resource "aws_instance" "app" {
 echo ECS_CLUSTER=app >> /etc/ecs/ecs.config
 EOF
 
-  tags {
+  tags = {
     Name = "app"
   }
 }
